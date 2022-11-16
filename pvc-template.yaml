@@ -1,12 +1,7 @@
-apiVersion: template.openshift.io/v1
-kind: Template
-metadata:
-  name: pvc-template
-objects:
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: claim1
+  name: pvc-jars
 spec:
   accessModes:
     - ReadWriteOnce
