@@ -8,11 +8,11 @@
 		<version>2.4.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.techtejendra</groupId>
-	<artifactId>spring-boot-hello-world</artifactId>
+	<groupId>com.test</groupId>
+	<artifactId>spring-boot-hello-world-fe</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-boot-hello-world</name>
-	<description>Demo project for Spring Boot</description>
+	<name>spring-boot-hello-world-fe</name>
+	<description>Demo project for Spring Boot FE</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
