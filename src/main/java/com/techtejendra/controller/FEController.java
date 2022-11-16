@@ -10,7 +10,7 @@ import org.springframework.web.client.RestTemplate;
 public class FEController
 {
 
-	static final String uri = "http://backend-1.backend.svc.cluster.local/getTimestamp";
+	static final String uri = "http://backend-1.backend.svc.cluster.local:8080/getTimestamp";
 
 	static final RestTemplate restTemplate = new RestTemplate();
 
