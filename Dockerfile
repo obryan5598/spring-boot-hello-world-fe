@@ -10,6 +10,7 @@ COPY src /home/app/src
 COPY pom.xml /home/app
 
 RUN mkdir -p /var/local/SP
+RUN touch /var/local/SP/timestamp.properties
 RUN mvn -f /home/app/pom.xml clean package
 #RUN touch /var/local/SP/timestamp.properties
 
