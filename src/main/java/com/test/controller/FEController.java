@@ -1,4 +1,4 @@
-package com.techtejendra.controller;
+package com.test.controller;
 
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
@@ -10,7 +10,9 @@ import org.springframework.web.client.RestTemplate;
 public class FEController
 {
 
-	static final String uri = "http://backend-1.backend.svc.cluster.local:8080/getTimestamp";
+	String endpoint = System.getenv("BACKEND-SERVICE-ENDPOINT");
+	String port = System.getenv("BACKEND-SERVICE-PORT");
+	String uri = "http://" + endpoint + ":" + port + "/getTimestamp";
 
 	static final RestTemplate restTemplate = new RestTemplate();
 
